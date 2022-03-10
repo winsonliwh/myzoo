@@ -31,4 +31,23 @@ Directions: empty bag in frog habitat once daily. Do not touch frogs! Extremely 
 5. Western Lowland Gorilla
 Meal: (Morning) 20 lbs. kale, 10 lbs. celery, 10 lbs. green beans, 5 lbs. carrgots, 1 bag sweet potatoes. (Evening) 10 Bananas, 10 apples, 5 oranges, 5 mango, 20 lbs. grapes, 10 lbs. turnips, 5 lbs. white potatoes
 Times: 6:30 am, 12:00 pm, 7:00 pm
-Directions: feed Gorillas in the morning as group, spread forage items during noon meal, and divide quantities for individual feeding in evenin
+Directions: feed Gorillas in the morning as group, spread forage items during noon meal, and divide quantities for individual feeding in Evening
+
+     Step IV: View status of the repository
+                (You should see meal-regimens.txt file in both staged and unstaged areas.
+                 Some part of the file is staged, some part is still in working area.
+                 
+                 How to see the staged content?
+                     git diff --staged HEAD (Difference between recent commit and staged area)
+                     expected output: Should list only 4. Poison Dart Frongs ...... 
+                 
+                 How to see diff b/w unstaged and staged content?
+                     git diff ( should list only 5.West Lowland Gorilla
+                 
+                 ).
+      Step V: Make first commit with only staged content.
+              (Executing GIT COMMIT -m "<<msg>>" will save the staged content only).
+      Step VI: Stage meal-regimens.txt again.
+              (git diff --cached HEAD => verify if it shows 5.West Lowland Gorilla .... )
+      Step VII: Make commit again.
+

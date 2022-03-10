@@ -6,7 +6,7 @@ git clone <<url>>         => Clone the remote repository@url
 git status                => Current status of git repository
 git add <<filename>>      => Moves file to the staging area(Index)
 git add .                 => Moves all tracked/untracked files to the staging area
-git add -u                => Moves only modified files to the staging area (ignores Newly added/deleted files)
+git u                => Moves only modified files to the staging area (ignores Newly added/deleted files)
 git commit                => Saves stages files to the repository 
                                (Running this command opens a commit editor to enter commit message, to close this editor press ESC then :x! ENTER )                               
 git diff --staged HEAD    => diff b/w staged content and recent commit  
